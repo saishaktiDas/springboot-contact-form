@@ -43,6 +43,12 @@ public class ContactController {
 
 		return contactRepository.findAll();
 	}
-				
+	@GetMapping("/dashboard")
+	public String dashboard(){
+		return "Contacts";
+	}
 
-}
+
+	}
+
+
